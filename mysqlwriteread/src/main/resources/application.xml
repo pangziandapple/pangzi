@@ -25,5 +25,5 @@
 		</property>
 	</bean>
 	
-	<import resource="classpath*:/mybatis-spring.xml" />
+	<import resource="classpath*:/aop-mybatis-spring.xml" />
 </beans>
