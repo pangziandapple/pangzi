@@ -13,10 +13,10 @@
 
 	<bean id="dataSourceRead" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
-		<property name="driverClassName" value="${jdbc.driverClassName}" />
-		<property name="url" value="${jdbc.url}" />
-		<property name="username" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
+		<property name="driverClassName" value="${jdbc.driverClassName.read}" />
+		<property name="url" value="${jdbc.url.read}" />
+		<property name="username" value="${jdbc.username.read}" />
+		<property name="password" value="${jdbc.password.read}" />
 		<!-- 配置初始化大小、最小、最大 -->
 		<property name="initialSize" value="1" />
 		<property name="minIdle" value="1" />
@@ -53,10 +53,10 @@
 
 	<bean id="dataSourceWrite" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
-		<property name="driverClassName" value="${jdbc.driverClassName}" />
-		<property name="url" value="${jdbc.url}" />
-		<property name="username" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
+		<property name="driverClassName" value="${jdbc.driverClassName.write}" />
+		<property name="url" value="${jdbc.url.write}" />
+		<property name="username" value="${jdbc.username.write}" />
+		<property name="password" value="${jdbc.password.write}" />
 		<!-- 配置初始化大小、最小、最大 -->
 		<property name="initialSize" value="1" />
 		<property name="minIdle" value="1" />
